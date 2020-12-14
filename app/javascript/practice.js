@@ -1,7 +1,42 @@
 $(function(){
 
-//1 要素取得
+  //1 要素取得
+  let dom=$('#textChange')   
 
+//2 対象要素にイベント設置
+
+  dom.on('click',function(){
+
+    
+//3 イベント発生時の処理を記述
+    dom.text('Ajax投稿する')
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//1 要素取得
   let form=$('#Form')   
 
 
@@ -11,8 +46,6 @@ $(function(){
 
     
 //3 イベント発生時の処理を記述
-
-    alert('click')
     e.preventDefault()
     let element=$('#Btn') 
 
