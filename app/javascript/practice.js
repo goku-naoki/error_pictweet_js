@@ -5,7 +5,7 @@ $(function(){
     //1 要素取得
       let dom=$('#text')   
 
-    //2 対象要素にイベント設置
+    //2 取得要素にイベントを設定
 
       dom.on('click',function(){
 
@@ -25,15 +25,15 @@ $(function(){
       let form=$('#Form')   
 
 
-    //2 対象要素にイベント設置
+    //2 取得要素にイベントを設定
 
       form.on('submit',function(e){
 
         
     //3 イベント発生時の処理を記述
         e.preventDefault()
-        let elements=$('#Btn') 
 
+        let elements=$('#Btn') 
         element.css("background-color","pink")
 
 
