@@ -38,19 +38,19 @@ $(function(){
 
 
     //発展変
-    // let formData=new FormData(this);
+    let formData=new FormData(this);
 
-    //     $.ajax({
-    //       url: "/tweet",   //リクエスト先のURL
-    //       type: "POST",     //HTTPメソッド
-    //       data: formData,   //リクエストとして送るデータ。rails側ではparamsとして扱われる
-    //       dataType: 'json', 
-    //       processData: false,
-    //       contentType: false
-    //     })
-    //     .done(function(response){
-    //       alert(response.text)
-    //     })
+        $.ajax({
+          url: "/tweet",   //リクエスト先のURL
+          type: "POST",     //HTTPメソッド
+          data: formData,   //リクエストとして送るデータ。rails側ではparamsとして扱われる
+          dataType: 'json', 
+          processData: false,
+          contentType: false
+        })
+        .done(function(response){
+          alert(response.text)
+        })
 
     })
  
